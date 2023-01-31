@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>UPDATE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+     <body>     
+            <form action="#" th:action="@{/Film/update}" th:object="${Film}" method="post">
+                <p>Nuovo Name:</p> 
+                <input type="text" th:field="*{name}"> 
+                <p>Nuovo Genere:</p> 
+                <input type="text" th:field="*{Genere}">
+                <p>Nuovo Anno:</p> 
+                <input type="text" th:field="*{Anno}">
+                <input type="hidden" th:field="*{Id}" th:value="${Film.Id}"/>
+
+                <p><input type="submit" value="Aggiorna" /> </p>
+            </form>
+         <br><br>
+         <a href="/Film">Clicca qui per aggiungere un altro film</a>
+         <br>
+         <a href="/Film/stampa">Stampa lista completa</a>
+        </body>
+</html>
