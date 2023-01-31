@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+
+<head>
+  <title>ADD FILM</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Aggiungi nuovo film</h1>
+<form action="#" th:action="@{/Film}" th:object="${Film}" method="post">
+  <p>Name: <input type="text" th:field="*{name}" /></p>
+  <p>Genere: <input type="text" th:field="*{Genere}" /></p>
+  <p>Anno: <input type="text" th:field="*{Anno}" /></p>
+  <p><input type="submit" value="Submit" /> 
+</form>
+<br>
+    <a href="/Film/stampa">Stampa lista completa</a>
+</body>
+</html>

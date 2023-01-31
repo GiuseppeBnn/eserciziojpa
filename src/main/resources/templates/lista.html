@@ -1,0 +1,21 @@
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <h2>Stampo lista Film</h2>
+        <h3 th:each="lista1:${lista}">
+            <h3>Titolo: </h3>
+            <span th:text="${lista1.name}"></span>
+            <h3>Genere: </h3>
+            <span th:text="${lista1.Genere}"></span>
+            <h3>Anno di uscita: </h3>
+            <span th:text="${lista1.Anno}"></span>
+            <br><br>
+
+            <a th:href="@{/Film/info/{Id}(Id=${lista1.Id})}">Modifica</a>
+
+             </h3>
+    </head>
+
+    <a href="/Film">Clicca qui per aggiungere un altro film</a>
+    <br>
+    <a href="/Film/stampa">Stampa lista completa</a>
+</html>

@@ -1,0 +1,4 @@
+/home/giuseppe/SpringBoot/eserciziojpa/src/main/java/com/film/eserciziojpa/models/Film.java
+/home/giuseppe/SpringBoot/eserciziojpa/src/main/java/com/film/eserciziojpa/controllers/FilmController.java
+/home/giuseppe/SpringBoot/eserciziojpa/src/main/java/com/film/eserciziojpa/EserciziojpaApplication.java
+/home/giuseppe/SpringBoot/eserciziojpa/src/main/java/com/film/eserciziojpa/data/FilmRepository.java
